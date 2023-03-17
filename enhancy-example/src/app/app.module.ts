@@ -4,6 +4,7 @@ import {NgxEnhancyFormsModule} from "@klippa/ngx-enhancy-forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MaterialModule} from "./material.module";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxEnhancyFormsModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
