@@ -1,3 +1,15 @@
-<div>
-  hond
+<div style="max-width: 800px;">
+  <klp-form [formGroup]="myForm">
+
+    <klp-form-element caption="Your fancy first name">
+      <klp-form-error error="required">Fill it in</klp-form-error>
+      <klp-form-text-input formControlName="firstName"></klp-form-text-input>
+    </klp-form-element>
+
+    <klp-form-element caption="Do you like pants?">
+      <klp-form-toggle formControlName="likesPants"></klp-form-toggle>
+    </klp-form-element>
+
+    <klp-form-submit-button [submitCallback]="saveForm">Save me</klp-form-submit-button>
+  </klp-form>
 </div>
